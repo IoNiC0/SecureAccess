@@ -35,10 +35,10 @@ try {
     $mail->Port = 465; 
     $mail->SMTPSecure = 'ssl'; 
     $mail->SMTPAuth = true;
-    $mail->Username = 'testotp2508@gmail.com';
-    $mail->Password = 'byqfgpduihxnlqro';
+    $mail->Username = 'your_email_id@gmail.com';
+    $mail->Password = 'your_password';
 
-    $mail->setFrom('testotp2508@gmail.com', 'Hangsha');
+    $mail->setFrom('your_email_id@gmail.com', 'your_username');
     $mail->addAddress($email);
     $mail->Subject = 'OTP Verification';
     $mail->Body = 'Your OTP is: ' . $otp;
